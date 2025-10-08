@@ -32,6 +32,18 @@ html {
     font-size: 1.2rem;
 }
 
+.break-type {
+    justify-content: space-between;
+}
+
+#short-break {
+    text-align: end;
+}
+
+#long-break {
+    text-align: start;
+}
+
 /* Just to be safe and keep the body in front of the background image */
 body {
     position: relative;
@@ -79,6 +91,9 @@ p {
     margin: 0 auto;
     width: 200px;
     height: 200px;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .circle-shape {
@@ -122,15 +137,16 @@ p {
     border-color: rgba(40, 36, 36, 0.4);
 }
 
-.app-counter-box {
+.counter-box {
     font-family: 'Droid Sans Mono', monospace;
     font-size: 250%;
     position: relative;
     top: 50px;
     color: #d8e9ef;
+    text-align: center;
 }
 
-.button-wrapper {
+.button-wrapper button {
     position: relative;
     top: 50px;
     font-size: 80%;
@@ -143,5 +159,9 @@ p {
 }
 
 button:hover {
-    color: #90c0d1;
+    padding: 5px;
+    border-radius: 8px; /* Applies a uniform 8px radius to all four corners */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger, more prominent shadow */
 }

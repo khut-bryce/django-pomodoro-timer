@@ -20,15 +20,18 @@
     <body>
         <header class="header-bar">
             <h1>Pomodoro</h1>
+            <!-- ex. 5 minute break, 10 minute break -->
+            <div class="button-wrapper">
+                <div id="short-break">Short Break</div>
+                <div id="short-break">Long Break</div>
+            </div>
         </header>
         
         <!-- Just for the bg image -->
         <div class="bg-image"></div>
 
-
         <!-- Main page overall -->
         <div class="container">
-            
             <!-- Creating a circle -->
             <div class="app-circle">
                 <div class="circle-shape">
@@ -37,17 +40,10 @@
                     <div class="semi-circle left-side circle-mask"></div>
                     <div class="semi-circle left-side circle"></div>
                 </div>
-            </div>
-            
-            <!-- ex. 5 minute break, 10 minute break -->
-            <div class="break-type">
-                <div id="short-break">Short Break</div>
-                <div id="short-break">Long Break</div>
-            </div>
-
-            <!-- For the actual timer container -->
-            <div class="counter-box">
-                <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+                <!-- For the actual timer container -->
+                <div class="counter-box">
+                    <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+                </div>
             </div>
 
             <div class="button-wrapper">
