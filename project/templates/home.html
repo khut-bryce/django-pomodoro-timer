@@ -1,0 +1,16 @@
+<!-- THIS LOADS IN THE STATIC ASSETS -->
+<!-- To use the templating engine, syntax is {percent sign percent sign} with code in between percent signs -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pomodoro Timer</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>Home</h1>
+        <p>Check out my <a href="/settings">Setting<a> page.</p>
+    </body>
+</html>
